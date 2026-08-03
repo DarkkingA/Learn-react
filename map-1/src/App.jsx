@@ -55,18 +55,64 @@ const users = [
 ]
 
 const name = users.map((n)=> n.nom)
-alert(name)*/
-const idt[
+alert(name)
+const idt=[
 {
 nom:"Aime",
 age:18
 }
 ] 
+const lidt= idt.map((n)=> n.nom +"  a " + n.age +"  ans" )
+let  e =[
+{
+nom:"Aime",
+
+}
+]
+
+e = e.map((n)=>{n.connecte=true  
+  return n
+})
+const p=[
+{
+produit:"Clavier",
+prix:10000
+}
+]
+const pttc= p.map((n)=> n.prix + (n.prix *18)/100
+  
+)
+const l=["HTML","CSS","JS"]
+
+const ll = l.map((n)=>
+  <li>{n}</li>
+)*/
+let produit = [
+  { title: 'banane', prix: 200 },
+  { title: 'pomme', prix: 300 },
+  { title: 'orange', prix: 250 },
+  { title: 'mangue', prix: 500 },
+  { title: 'ananas', prix: 800 },
+  { title: 'pastèque', prix: 1200 },
+  { title: 'papaye', prix: 400 },
+  { title: 'citron', prix: 150 },
+  { title: 'fraise', prix: 700 },
+  { title: 'kiwi', prix: 600 }
+];
+
+let achat = produit.map((n)=>
+  <div>
+    <h1>Nom :{n.title}</h1>
+    <h2>Prix: {n.prix}</h2>
+    <button>Acheter</button>
+  </div>
+)
+ 
 
 
 
 export default function App(){
   return<>
-         {y}
+         {achat}
   </>
 }
